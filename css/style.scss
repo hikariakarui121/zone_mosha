@@ -1,0 +1,204 @@
+html{
+  font-family: 'Hiragino Mincho Pro','Helvetica Neue';
+  text-align: center;
+}
+
+// ヘッダーの編集
+header{
+  background-color: black;
+  color:white;
+  width: 100%;
+  height: 80px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+
+  & h1{
+    font-size: 50px;
+    text-align: left;
+
+    & img{
+      width:193px;
+      height: 50px;
+    }
+ } 
+
+ & nav{
+    text-align: right;
+    position: absolute;
+    top:50%;
+    right: 15px;
+    transform: translateY(-10px);
+ 
+    & li{
+     display: inline-block;
+     margin-left:15px;
+
+    }
+  }
+}
+
+
+
+//  メインコンテンツ
+// ここからトップ
+.top{
+  background: url(../image/work-3938876_1920.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height:551px;
+  position: relative;
+  
+  &_title{
+    width:552px;
+    height: 60px;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+// コース紹介
+  .course{
+    width: 100%;
+
+    & h2{
+      display: inline-block;
+      font-size: 40px;
+      margin:53px 0 ;
+    }
+
+    & .contents{
+      width: 100%;    
+      margin-bottom:70px;
+      
+      & .content-item{
+        // margin-right:clac(100% - 1162px);
+        width:291px;
+        text-align: center;
+        display: inline-block;
+        
+        
+        & p{
+          border:1px solid black;
+          padding:20px 11px 35px;
+          box-sizing: border-box;
+        }
+  
+        & p+p {
+          border-top:1px solid black;
+        }
+      }
+    }
+  }
+
+
+    .btn{
+      display: block;
+
+      & >a{
+        border: 1px solid black;
+        font-size: 18px;
+        padding: 17px 110px;
+        margin-bottom: 50px;;
+        text-decoration: none;
+        color:black;
+        display:inline-block;
+      }
+    }
+
+
+    // ここから講師紹介
+  .teach{
+      margin: 100px 0;
+      width: 100%;
+
+     & h2{
+        font-size:40px;
+      }
+    }
+
+    .first, .second{
+      width: 100%;
+      margin: 50px auto 0;
+
+      & .image{
+        display: inline-block;
+        width:20%;
+        margin: 15px;
+      }
+    
+
+      & .text{
+        max-width: 729px;
+        width: 75%;
+        margin-left:61px;
+        display: inline-block;
+        text-align: right;
+        background-color: yellowgreen;
+        text-align: left;
+        transform: translateY(-50%);
+
+        & h3{
+          font-size: 40px;
+          padding :15px;
+        }
+  
+        & p{
+      
+          font-size: 18px;
+        }
+      }
+
+    }
+
+  // ラストコンテンツ
+
+  .bottom{
+    background:url(../image/success-846055_1920.png);
+    box-sizing: border-box;
+    margin-top: 50px;
+
+    & h2{
+      font-size: 48px;
+      padding: 62px 0;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    & p{
+      color: white;
+      font-size:16px;
+      margin-bottom: 30px;
+    }
+    .btn{
+      display: block;
+
+      &>a{
+            display:inline-block;
+            color:white;
+            padding: 18px 50px ;
+            background-color: red;
+            margin-bottom: 50px;
+     }
+    }
+  }
+  
+  
+
+
+  // フッター
+  footer{
+    background-color: black;
+    height: 80px;
+    
+    & p{
+      color: white;
+      line-height: 80px;
+    }
+  }
+

@@ -1,68 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="お菓子屋 「やよい」のHPです。豊富な品揃えとこだわり抜いた絶品のスイーツをご堪能ください。">
-  <link rel="stylesheet" href="style.css">
-  <title>Sweets Yayoi HP</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="resposive.css">
+    <title>模写コードt</title>
 </head>
 <body>
-<!-- ヘッダー -->
-<header>
-  <h1><a href="index.html">
-    <img src="img/logo.png" alt="やよいのロゴ" class="header_logo">
-  </a></h1>
-  <nav class="header-nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#">商品一覧</a></li>
-      <li><a href="#"></a>お問い合わせ</a></li>
-    </ul>
-  </nav>
+    <!-- ヘッダー部分 -->
+    <header>
+        <h1 class="logo"><img src="./image/logo.png" alt=""></h1>
+        <nav class="contact-nav">
+            <ul>
+                <li><a>お問い合わせ</a></li>
+                <li><a>ログアウト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ここから（メインコンテンツ） -->
+    <!-- トップコンテンツ -->
+    <section class="top">
+        <div class="top_title">No coding No Life</div>
+    </section>
+
+    <!-- コース紹介 -->
+    <section class="course">
+        <h2>コース一覧</h2>      
+        <div class="contents">
+            <div class="content-item">
+                <img src="./image/wordpress.png" alt="">
+                <p>WordPressの基礎を理解し、二つのテーマ開発を目指します。実務に近い形で学習します。</p>
+                <p>申し込み期限<br>2021年12月31日26時</p>
+            </div>
+    
+            <div class="content-item">
+                <img src="./image/shopify.png" alt="">
+                <p>shopifyを用いて3つのECサイトを構築することを通してと応用を学んでいきます</p>
+                <p>申し込み期限<br>2021年12月31日26時</p>
+            </div>
 
 
+            <div class="content-item">
+                <img src="./image/rails.png" alt="">
+                <p>RubyとRuby on Railsを3つのアプリケーションを開発することを通して学びます</p>
+                <p>申し込み期限<br>2021年12月31日26時</p>
+            </div>
+    
+            <div class="content-item">
+                <img src="image/ai.png" alt="">
+                <p>Pythonの基礎を学習した後、3つの機会学習プログラムを作成することを目指します</p>
+                <p>申し込み期限<br>2021年12月31日26時</p>
+            </div>
+    
+        </div>
+        
+        <div class="btn">
+            <a href="#">もっとみる</a>
+        </div>
+    </section>
 
-</header>
+    <!-- 講師紹介 -->
+    <section class="teach">
 
-<!-- トップ画像 -->
-<img class="top_image"src="./img/top_image.png" alt="">
+            <h2>講師紹介</h2>
+    
+            <div class ="first">
+                <div class="image">
+                    <img src="./image/DMYn1uwGMkEBJ2d1612792974_1612793004.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>水谷メアリージュン</h3>
+                    <p>システムエンジニア歴約20年、プログラミング歴約35年。プログラミングの守備範囲は、フロントエンド、サーバー再度、Android開発と広く、普段はシステム開発プロジェクトの管理や後輩の指導を行っている。</p>
+                </div>
+            </div>
+    
 
-<!-- 商品一覧 -->
-<h2>商品一覧</h2>
-<div class="goods-list">
-  <div class="goods-item">
-    <img class="goods-picture"src="./img/cake.jpg" alt="">
-    <p>ふんわりショートケーキ</p>
-  </div>
-  <div class="goods-item">
-    <img class="goods-picture" src="./img/waffle.jpg" alt="">
-    <p>贅沢アイスワッフル</p>
-  </div>
-  <div class="goods-item">
-    <img class="goods-picture" src="./img/cookie.jpg "alt="">
-    <p>こだわりクッキー</p>
-  </div>
-</div>
+        <div class ="second">
+            <div class="image">
+                <img src="image/qFrBv7tSPM5b0YK1612793069_1612793086.png" alt="">
+            </div>
+            <div class="text">
+                <h3>ジョージ・ウィリアム</h3>
+                <p>Iot技術をベースに、ハードウェアからクラウドまでを広くカバーする他、小学校から大人まで幅広く、プログラミングに関する指導経験が多数あります。
+                </p>
+            </div>
+        </div>
 
-<!-- お問い合わせ -->
-<h2>お問い合わせ</h2>
-<form>
-  <label for="name">お名前：</label>
-  <input type="text"  class="contact" name="name" size="42">
-  <label for="email">メールアドレス：</label>
-  <input type="text"  class="contact" name="email" size="42">
-  <label for="content">お問い合わせ内容：</label>
-  <textarea class="contact"name="content" id="" cols="30" rows="5"></textarea>
-  <input type="submit" class="submit" value="送信"> 
-</form>
+    </section>
 
-<!-- フッター -->
-  <footer>
-    <div class="copyright">
-      <p>&copy;Copyright2021やよい. All Rights. Reserved.</p>
-    </div>
-  </footer>
+    <!-- ラストコンテンツ -->
+    <section class="bottom">
+        <h2>動き出すなら今だ</h2>
+        <p>「自由な場所で働きたい」<br>
+        「自由な時間に働きたい」<br>
+        「個人で稼げる力を身につけたい」<br>
+        </p>
+        <p>プログラミングはこれら全てを叶えてくれる。<br>
+        人生を変える力を持っている。<br>
+        さあ、今日を人生のターニングポイントにしよう。</p>
+
+        <div class="btn">
+            <a href="#">資料請求する </a>
+        </div>
+    </section>
+
+    <!-- フッター部分 -->
+    <footer>
+        <p><small>Copyright(2021 coding School All Rights Reserved</small></p>
+    </footer>
 
 </body>
 </html>
